@@ -1,0 +1,57 @@
+.task-container {
+    position: relative;
+  }
+
+  .task-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 40px;
+    padding-bottom: 20px;
+    position: relative;
+  }
+
+  .date-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    pointer-events: none;
+  }
+
+  .icon-calendar {
+    margin-right: 5px;
+    color: #6c757d;
+    font-size: 1rem;
+  }
+
+  .date-photo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .avatar {
+    margin-left: 10px;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .task-danger {
+    border-left: 5px solid red;
+  }
+  
+  .task-warning {
+    border-left: 5px solid orange;
+  }
+  
+  .task-due-soon::after {
+    content: '';
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: orange;
+  }
